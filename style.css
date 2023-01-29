@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    padding: 30px;
+}
+
+.head{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.video-big{
+    width:600px;
+    height:550px; 
+}
+
+.small-window{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 550px;
+    width: 400px;
+    gap: 10px;
+    padding: 20px;
+    border: 20px solid #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.main-screen{
+    /* width: 600px; */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 40px;
+}
+
+.play{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.play h2{
+    padding-left: 20px;
+}
+
+.video-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.video-div video{
+    width: 100px;
+    height: 100px;
+}
+
+.video-div h2{
+    font-size: 16px;
+}
+
+.playing{
+    background-color: #555;
+    padding: 20px;
+    color: #fff;
+}
+
+.playing p{
+    font-weight: 300;
+}
+
+.video-div:hover{
+    background-color:#888;
+}
+
+@media screen and (max-width:1100px) {
+    .video-big{
+        width:100%;
+        height:550px; 
+    }
+}
+
+@media screen and (max-width:838px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .video-big{
+        width:100%;
+        height:550px; 
+    }
+    .small-window{
+        width: 80%;
+    }
+}
